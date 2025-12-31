@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resiliun Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Khand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="hero-section" id="cover">
+        <div class="hero-left">
+            <div class="deco-corner-tl"></div>
+            <div class="profile-info">
+                <h1><img src="img/logo re.png" class="images">RESILIUN.</h1>
+                <div class="avatar">
+                    <img src="img/Prifile.jpeg" alt="Profile">
+                </div>
+                <div class="social-icons-hero">
+                    <a href="#cover" aria-label="go cover" class="scroll-link" >
+                     <i class="fas fa-home"></i>
+                    </a>
+                    <a href="#about" aria-label="go about" class="scroll-link" >
+                    <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#hightlight" aria-label="go hightlight" class="scroll-link" >
+                    <i class="fas fa-file"></i>
+                    </a>
+                </div>
+                <p class="role">Illustrator / 2D & 3D Artist</p>
+            </div>
+            <div class="deco-corner-bl"></div>
+        </div>
+
+        <div class="hero-center">
+            <h2 class="vertical-text">PORTOFOLIO</h2>
+        </div>
+
+        <div class="hero-right" style="background-image: url(img/image\ 1.webp);">
+            <div class="deco-corner-tr"></div>
+            <div class="barcode-corner-br">||||||</div>
+        </div>
+    </section>
+    
+    <div class="red-bar"></div>
+    <section class="about-section" id="about">
+        <div class="about-left">
+            <div class="deco-corner-tl-white"></div>
+            <h2>About Me.</h2>
+            <p>
+                Welcome to Resiliun Project! Gue fokus buat create aset digital 2D/3D dan ilustrasi.
+                Minat gue di dunia ini udah ada sejak kecil. Gue selalu aim buat kasih the best effort di setiap garisnya,
+                Let's connect through my socials below!
+            </p>
+            <p>Software:</p>
+            <div class="software-icons">
+                <i><img class="soft-icon" src="img/blender.png"></i>
+                <i><img class="soft-icon" src="img/csp.jpg"></i>
+                <i><img class="soft-icon-1" src="img/cubims.png"></i>
+            </div>
+            <div class="deco-corner-bl-white"></div>
+        </div>
+        
+        <div class="about-right">
+            <div class="deco-square-tr"></div>
+            <div class="photo-arch">
+                <div class="arch-inner"></div>
+            </div>
+            <div class="deco-square-br"></div>
+        </div>
+    </section>
+
+    <section class="highlight-section" id="hightlight">
+            <div class="red-bar"></div>
+        <div class="gallery-wrapper" style="position: relative; display: flex; align-items: center;">
+            <a class="btn-geser-left" onclick="geserGallery(-300)" id="gulir-left" style="position: absolute; left: -120px; z-index: 10;"><img src="img/left.webp" alt="panah kiri" ></a>
+        <div class="gallery-grid">
+            <div class="gallery-item" id="art1"><img src="img/3d.png" alt="Art 1"></div>
+            <div class="gallery-item" id="art2"><img src="img/anggun.webp" alt="Art 2"></div>
+            <div class="gallery-item" id="art3"><img src="img/ilust 2.webp" alt="Art 3"></div>
+            <div class="gallery-item" id="art4"><img src="img/vtbgif.webp" alt="Art 4"></div>
+            <div class="gallery-item" id="art5"><img src="img/vtb.png" alt="Art 5"></div>
+            <div class="gallery-item" id="art6"><img src="img/armor 3.webp" alt="Art 6"></div>
+            <div class="gallery-item" id="art7"><img src="img/sketch.webp" alt="Art 7"></div>
+            <div class="gallery-item" id="art8"><img src="img/ice.webp" alt="Art 8"></div>
+        </div>
+         <a class="btn-geser-right" onclick="geserGallery(300)" id="gulir-right" style="position: absolute; right: -120px; z-index: 10;"><img src="img/right.webp" alt="panah kiri" ></a>
+
+</div>
+        <div class="highlight-title-bar">
+            <h2>Highlight</h2>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-left">
+            <h2>Contact Me</h2>
+            <div class="contact-list">
+                <div class="contact-item"><i class="fas fa-envelope"></i>
+                    <a href="mailto:gurita1040@gmail.com">gurita1040@gmail.com</a></div>
+                <div class="contact-item"><i class="fab fa-instagram"></i>
+                    <a href="https://wa.me/6285713114924">085713114924</a></div>
+                <div class="contact-item"><i class="fab fa-whatsapp"></i>
+                    <a href="https://wa.me/6285713114924">085713114924</a></div>
+            </div>
+        </div>
+        <div class="contact-right">
+            </div>
+    </section>
+</body>
+<div class="fab-container">
+ <button class="fab-main" onclick="toggleMenu()">+</button>
+<div class="fab-options">
+                    <a href="#cover" class="popup" aria-label="go cover" >
+                     <i class="fas fa-home"></i>
+                    </a>
+                    <a href="#about" class="popup" aria-label="go about" >
+                    <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#hightlight" class="popup" aria-label="go hightlight" >
+                    <i class="fas fa-file"></i>
+                    </a>
+    </div>
+    
+<script src="script.js"></script>
+<script src="popup.js"></script>
+<script src="securty.js"></script>
+</div>
+</html>
