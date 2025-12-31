@@ -356,6 +356,7 @@ body {
     scale: 20%;
     filter: opacity(80%);
     border-color: transparent;
+    cursor: none !important;
     
 }
 
@@ -364,6 +365,7 @@ body {
     scale: 20%;
     filter: opacity(80%);
     border-color: transparent;
+    cursor: none !important;
     
 }
 
@@ -665,7 +667,7 @@ html {
 
 /* Kelas baru untuk menyembunyikan seluruh FAB */
 .fab-container.hidden {
-    display: none !important; /* Menyembunyikan elemen sepenuhnya */
+    visibility: hidden !important; /* Menyembunyikan elemen sepenuhnya */
     /* Atau bisa juga: visibility: hidden; opacity: 0; */
 }
 
@@ -686,3 +688,37 @@ html {
     transform: scale(110%);
     filter: brightness(110%);
 }
+
+/*cursor custom*/
+
+/* Menghilangkan kursor asli di seluruh web */
+body {
+  cursor: none !important;
+  
+}
+
+#cursor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px; /* Sesuaikan ukuran kursor Anda */
+  height: 50px;
+  pointer-events: none; /* PENTING: Agar kursor tidak menghalangi klik pada tombol lain */
+  z-index: 99999;
+  transform: translate(-50%, -50%); /* Agar titik tengah gambar pas di ujung mouse */
+  transition: transform 0.1s ease-out; /* Efek halus mengikuti mouse */
+  display: block;
+}
+
+
+#cursor-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Opsional: Saat kursor di atas link/tombol, beri efek membesar */
+.cursor-hover {
+  transform: translate(-50%, -50%) scale(1.5) !important;
+}
+

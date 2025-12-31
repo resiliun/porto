@@ -14,3 +14,31 @@ function geserGallery(jarak) {
         console.error("Gagal geser: Elemen '.gallery-grid' tidak ditemukan.");
     }
 }
+
+// --- BAGIAN 2: CUSTOM CURSOR ---
+    const cursorContainer = document.getElementById('cursor-container');
+    const cursorImg = document.getElementById('cursor-img');
+    
+    if (cursorContainer) {
+        // Aktifkan kursor kustom hanya jika elemennya ada
+        cursorContainer.style.display = 'block';
+        document.body.style.cursor = 'none';
+
+        const imgNormal = 'img/cursor_normal.png';
+        const imgClick = 'img/cursor_select.png';
+
+        document.addEventListener('mousemove', (e) => {
+            cursorContainer.style.left = e.clientX + 'px';
+            cursorContainer.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursorImg.src = imgClick;
+            cursorContainer.style.transform = 'translate(-50%, -50%) scale(0.9)';
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursorImg.src = imgNormal;
+            cursorContainer.style.transform = 'translate(-50%, -50%) scale(1)';
+        });
+    }
