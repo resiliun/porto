@@ -134,6 +134,7 @@ body {
     font-size: 1rem;
     color: var(--text-white);
     transition: 0.3s;
+    cursor: none !important;
 }
 
 .social-icons-hero i:hover {
@@ -439,10 +440,16 @@ body {
 }
 
 /* --- SECTION 4: CONTACT ME --- */
+
+#email,#instagram,#wa {
+     cursor: none !important;
+}
+
 .contact-section {
     display: flex;
     min-height: 300px;
     border-top: 2px solid var(--text-white); /* Garis pemisah tipis */
+    cursor: none !important;
 }
 
 .contact-left {
@@ -452,6 +459,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .contact-left h2 {
@@ -460,13 +468,16 @@ body {
     margin-bottom: 25px;
     text-transform: uppercase;
     color: var(--text-white);
+    
 }
 
 .contact-list {
     font-family: var(--font-body);
+    
 }
 
 .contact-item {
+    cursor: none !important;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -524,6 +535,8 @@ html {
         transform: rotate(0);
         font-size: 3rem;
     }
+
+            /*fab or popup*/
 
     .fab-container {
   /* Ini yang paling penting: menambatkan container ke layar */
@@ -608,6 +621,7 @@ html {
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   text-decoration: none; /* Untuk tag <a> */
+  cursor: none !important;
 }
 
 .fab-main {
@@ -663,6 +677,7 @@ html {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  cursor: none;
 }
 
 /* Kelas baru untuk menyembunyikan seluruh FAB */
@@ -673,6 +688,12 @@ html {
 
 .fab-container i:hover {
     background: var(--accent-blue);
+    color: var(--dark-bg);
+    transform: scale(110%)
+}
+
+#plus i:hover {
+     background: var(--accent-blue);
     color: var(--dark-bg);
     transform: scale(110%)
 }
@@ -694,7 +715,6 @@ html {
 /* Menghilangkan kursor asli di seluruh web */
 body {
   cursor: none !important;
-  
 }
 
 #cursor-container {
@@ -705,7 +725,7 @@ body {
   height: 50px;
   pointer-events: none; /* PENTING: Agar kursor tidak menghalangi klik pada tombol lain */
   z-index: 99999;
-  transform: translate(-50%, -50%); /* Agar titik tengah gambar pas di ujung mouse */
+  transform: translate(0%, 0%); /* Agar titik tengah gambar pas di ujung mouse */
   transition: transform 0.1s ease-out; /* Efek halus mengikuti mouse */
   display: block;
 }
